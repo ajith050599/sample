@@ -1,0 +1,323 @@
+#root {
+  width: 0;
+  height: 0;
+}
+.chat-box {
+  position: fixed;
+  height: 450px !important;
+  bottom: 80px;
+  right: 25px;
+  width: 380px;
+}
+
+.chat-box-maximise {
+  position: fixed;
+  height: 100vh !important;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  // padding: 20px;
+}
+
+
+.textStyles {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.line-chart-container {
+  height: 400px;
+  width: 100%;
+}
+
+.pie-chart-container {
+  height: 400px;
+  width: 100%;
+}
+
+.bar-chart-container {
+  height: 400px;
+  width: 100%;
+}
+
+.chat-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  border-radius: 8px;
+  height: 100%;
+  box-shadow: 5px 5px 20px;
+}
+.msg-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 70%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #f4f4f4;
+}
+   
+.msg-wrapper-maximise {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 75%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #f4f4f4;
+}
+
+
+.send-reply-div {
+    gap: 0.5rem !important;
+    height: fit-content;
+    padding: 10px;
+    }
+
+  
+    .individual-message {
+      padding: 1rem;
+      border-style: none;
+      border-radius: 5px;
+      background: radial-gradient(circle at 10% 20%, rgb(99, 55, 255) 0%, rgb(39, 170, 255) 90%);
+      color: #fff;
+      width: fit-content;
+      min-width: 15%;
+      max-width: 70%;
+    }
+    .reply-message {
+      padding: 1rem;
+      border-style: none;
+      border-radius: 5px;
+      background-color: #ffff;
+      width: fit-content;
+      min-width: 15%;
+      max-width: 40%;
+    }
+  
+
+
+
+
+.msg-wrapper::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.msg-wrapper::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+
+.msg-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #0ae;
+}
+.msg-wrapper-maximise::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.msg-wrapper-maximise::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+
+.msg-wrapper-maximise::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+.input-wrapper {
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  height: 60px;
+  border-top: 2px solid #f4f4f4 ;
+}
+.text-field {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 5rem;
+}
+
+.text-field-maximise {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px;
+  margin-top: 15px;
+}
+
+.send-button {
+  background: radial-gradient(circle at 10% 20%, rgb(99, 55, 255) 0%, rgb(39, 170, 255) 90%) !important;
+  color: #000 !important;
+  min-width: 40px !important;
+  min-height: 40px !important;
+  border-radius: 50%;
+  display: none;
+  gap: 1 rem;
+}
+.send-img {
+  height: 25px;
+  width: 25px;
+}
+
+.msg-text-field {
+  width: 90%;
+}
+
+.chat-img {
+  width: 40px;
+  height: 40px;
+}
+
+.chat-app-widget {
+  position: absolute;
+  bottom: 30px;
+  right: 5px;
+}
+
+.chat-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+  background: radial-gradient(circle at 10% 20%, rgb(99, 55, 255) 0%, rgb(39, 170, 255) 90%);
+}
+
+.chat-controls-maximise {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  height: 35px;
+  width: 100%;
+  border-radius: 4px;
+  background: radial-gradient(circle at 10% 20%, rgb(99, 55, 255) 0%, rgb(39, 170, 255) 90%);
+}
+.close-icon {
+  height: 25px;
+  width: 25px;
+}
+
+.close-icon-maximise {
+  height: 25px;
+  width: 25px;
+}
+.chatbot-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 30%;
+  color: #fff;
+}
+
+.chatbot-name-maximise {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.set-close-max-min{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22%;
+  padding-top: 2px;
+}
+
+.set-close-max-min-maximise{
+  display: flex;
+  width: 10%;
+  padding-top: 2px;
+}
+
+.send-msg-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.reply-msg-div{
+  display: flex;
+  flex-direction: row;
+}
+
+.bot-img{
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+}
+
+.input-field-chat.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+  border-color: #5EA841 !important;
+  border-style: none;
+}
+
+/*for change label color in focus state*/
+.MuiFormLabel-root.Mui-focused{
+  display: none;
+  // color: #fff !important;
+}
+
+.input-field-chat{
+  border: none;
+  background-color: none;
+  height: 50px;
+  width: 60%;
+  font-size: 16px;
+}
+
+.input-field-chat:focus {
+  outline:none;
+}
+
+.input-field-chat-maximise{
+  border: none;
+  background-color: none;
+  height: 50px;
+  width: 80%;
+  font-size: 16px;
+}
+
+.input-field-chat-maximise:focus {
+  outline:none;
+}
+
+.max-min-div{
+width: 25px;
+height: 25px;
+margin-right: 10px;
+}
+
+.close-div{
+  width: 25px;
+  height: 25px;
+}
